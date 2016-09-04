@@ -3,7 +3,7 @@
 #include <random>
 #include <functional>
 
-class myRand{
+class Rand{
 private:
 
 	std::random_device rd;

@@ -7,7 +7,7 @@
 #include <thread>
 #include <fstream>  
 
-#include "myRand.h"
+#include "Rand.h"
 #include "Semaphore.h"
 
 
@@ -54,7 +54,7 @@ private:
 	std::mutex printmutex;
 	std::mutex logmutex;
 	std::mutex randmutex;
-	myRand rand;
+	Rand rand;
 	std::ofstream logfile;
 	int _it;     // nr of times to eat
 	int _nrOfPs; // nr of philosophers

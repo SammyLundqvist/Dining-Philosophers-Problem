@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Monitor.h" />
+    <ClInclude Include="Philosopher.h" />
+    <ClInclude Include="Rand.h" />
+    <ClInclude Include="Semaphore.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Monitor.cpp" />
+    <ClCompile Include="Philosopher.cpp" />
+    <ClCompile Include="Rand.cpp" />
+    <ClCompile Include="Semaphore.cpp" />
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5F70C3AC-6E2B-4DB0-A287-0A0BE5EE1B8B}</ProjectGuid>
     <RootNamespace>Dining_Philosophers_Problem</RootNamespace>
@@ -109,22 +122,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Monitor.cpp" />
-    <ClCompile Include="myRand.cpp" />
-    <ClCompile Include="Philosopher.cpp" />
-    <ClCompile Include="Semaphore.cpp" />
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Monitor.h" />
-    <ClInclude Include="myRand.h" />
-    <ClInclude Include="Philosopher.h" />
-    <ClInclude Include="Semaphore.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="philosofers353.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -9,7 +9,7 @@
 #define FILENAME "philosofers353.txt" // skrivskyddad
 #define DEFAULT_LOG "philo.log"
 
-void getChopsticks(void);
+//void getChopsticks(void);
 
 bool getPhilosophersNameFromFile(std::vector<std::string>&);
 Monitor* getDefaultMonitor(std::vector<std::string>&philosopherNameList);
@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
 	std::string filename;
 
 	if (argc == 1)
-		mon = getDefaultMonitor(philosopherNameList);
+		mon = getDefaultMonitor(philosopherNameList); //mini factory
 	else
 	{
 		try{
@@ -63,7 +63,7 @@ int main(int argc, char* argv[]) {
 	}
 	mon->start();
 	delete mon;
-	//system("pause");
+
 	return 0;
 }
 
@@ -85,5 +85,7 @@ bool getPhilosophersNameFromFile(std::vector<std::string>&philosopherNameList){
 }
 
 Monitor* getDefaultMonitor(std::vector<std::string>&philosopherNameList){
-	return new Monitor(philosopherNameList, DEFAULT_LOG, 5, 6); // 5 plates, 6 philosophers
+	int plates = 5; // nr of plates in use 
+	int phil = 6;   // nr of philosophers eating
+	return new Monitor(philosopherNameList, DEFAULT_LOG, plates, phil); 
 }

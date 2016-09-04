@@ -1,4 +1,4 @@
-#include "myRand.h"
+#include "Rand.h"
 
 
 /*myRand::myRand()
