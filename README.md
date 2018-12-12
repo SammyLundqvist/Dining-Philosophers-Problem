@@ -5,3 +5,5 @@ The project is intended to solve the Dining Philosophers problem. Its a multithr
 The cout is handled threadsafe. A random number generator class can generate what ever type of number using template methods.
 
 The project was created using Visual Studio 2015.
+
+The project is based on Arbitrator solution with a waiter (monitor) system. This works but also reduces the effectivness of parallelism. 
